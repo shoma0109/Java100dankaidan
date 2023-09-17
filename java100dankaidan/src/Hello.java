@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Hello {
     String lastName;
+    String firstName;
     public void show() {
         System.out.println("Hello world");
     }
@@ -10,5 +11,6 @@ class Hello {
         System.out.println("名前を入力してください");
         String lastName = scanner.next();
         System.out.println("苗字を入力してください");
+        String firstName = scanner.next();
     }
 }
