@@ -8,9 +8,7 @@ class Hello {
     public void askName(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("名前を入力してください");
-    }
-    public void firstName(){
-        Scanner scanner = new Scanner(System.in);
+        String lastName = scanner.next();
         System.out.println("苗字を入力してください");
     }
 }
