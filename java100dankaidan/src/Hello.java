@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class Hello {
+    String askName;
     public void show() {
         System.out.println("Hello world");
     }
