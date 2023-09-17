@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 class Hello {
-    public static void show() {
+    public void show() {
         System.out.println("Hello world");
     }
-    public static void askName(){
-        
+    public void askName(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("名前を入力してください");
     }
 }
