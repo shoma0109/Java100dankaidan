@@ -1,8 +1,9 @@
 package calculation;
 
 public class Calc {
-    public void calc(String[] args){
+    public static void main(String[] args){
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
-        workingTimeScale.add(10, (int) 0.1256789);
+        workingTimeScale.add(0, 0);
+        workingTimeScale.currentWorkingTime();
     }
 }
