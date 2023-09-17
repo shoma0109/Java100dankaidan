@@ -4,13 +4,13 @@ class Hello {
     String lastName;
     String firstName;
     public void show() {
-        System.out.println("Hello world");
+        System.out.println("Hello " + firstName + " " + lastName + " さん！");
     }
     public void askName(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("名前を入力してください");
-        String lastName = scanner.next();
+        lastName = scanner.next();
         System.out.println("苗字を入力してください");
-        String firstName = scanner.next();
+        firstName = scanner.next();
     }
 }
