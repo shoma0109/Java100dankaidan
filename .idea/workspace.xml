@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a83c6cd-02a0-4f5b-9e9c-f8d20893668f" name="変更" comment="" />
+    <list default="true" id="2a83c6cd-02a0-4f5b-9e9c-f8d20893668f" name="変更" comment="">
+      <change beforePath="$PROJECT_DIR$/java100dankaidan/src/calculation/Calc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java100dankaidan/src/calculation/WorkingTimeScale.java" beforeDir="false" afterPath="$PROJECT_DIR$/java100dankaidan/src/calculation/WorkingTimeScale.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +16,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2VV7SCRqO7ATEkNJLVRuZWBGl9v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +29,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "issue",
+    "last_opened_file_path": "C:/Users/rising-horse/Desktop/Java100dankaidan"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
