@@ -8,6 +8,6 @@ public class Main {
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
         var number = 10.1256789;
         workingTimeScale.add(BigDecimal.valueOf(number));
-//        workingTimeScale.currentWorkingTime();
+        workingTimeScale.currentWorkingTime(BigDecimal.valueOf(number));;
     }
 }

@@ -7,8 +7,9 @@ public class WorkingTimeScale {
         System.out.println(num);
     }
 
-//    public void currentWorkingTime(){
-//        BigDecimal result = total_time.setScale(2, RoundingMode.DOWN);
-//        System.out.println(result);
-//    }
+    public BigDecimal currentWorkingTime(BigDecimal number){
+        BigDecimal result =number.setScale(2, RoundingMode.DOWN);
+        System.out.println(result);
+        return result;
+    }
 }
