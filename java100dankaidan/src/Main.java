@@ -9,6 +9,7 @@ public class Main {
         var number = 10.1256789;
         workingTimeScale.add(BigDecimal.valueOf(number));
         workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.currentWorkingTime(BigDecimal.valueOf(number));
+        workingTimeScale.add(BigDecimal.valueOf(number));
+        System.out.println(workingTimeScale.currentWorkingTime());
     }
 }
