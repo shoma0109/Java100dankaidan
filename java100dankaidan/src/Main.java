@@ -5,6 +5,6 @@ public class Main {
         hello.show();
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
         workingTimeScale.add(0);
-//        workingTimeScale.currentWorkingTime();
+        workingTimeScale.currentWorkingTime();
     }
 }
