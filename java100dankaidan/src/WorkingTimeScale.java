@@ -17,11 +17,11 @@ public class WorkingTimeScale {
 
     public void add(LocalDateTime from, LocalDateTime to) {
         final Duration duration = Duration.between(from, to);
-        final long hourminutes = duration.toMinutes();
+        final var hourminutes = duration.toMinutes();
         final var minute = BigDecimal.valueOf(hourminutes);
-        BigDecimal total_hourminutes =  minute.setScale(2,RoundingMode.HALF_UP).divide(b2,RoundingMode.HALF_UP);
-        System.out.println(total_hourminutes);
+        final var total_hourminutes =  minute.setScale(2,RoundingMode.HALF_UP).divide(b2,RoundingMode.HALF_UP);
         total_time = currentWorkingTime().add(total_hourminutes);
+        System.out.println(total_hourminutes);
         System.out.println(total_time);
     }
 }
