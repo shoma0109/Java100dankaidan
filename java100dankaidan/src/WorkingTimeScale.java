@@ -1,9 +1,11 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class WorkingTimeScale {
     private BigDecimal total_time = new BigDecimal(0);
+    BigDecimal b2 = new BigDecimal(60);
     public void add(BigDecimal num){
         total_time = total_time.add(num);
     }
@@ -13,9 +15,13 @@ public class WorkingTimeScale {
         return result;
     }
 
-    public void add(LocalDateTime ldt1, LocalDateTime ldt2) {
-        System.out.println(ldt1);
-        System.out.println(ldt2);
-//      Duration.main(ldt1, ldt2);
+    public void add(LocalDateTime from, LocalDateTime to) {
+        final Duration duration = Duration.between(from, to);
+        final long hourminutes = duration.toMinutes();
+        final var minute = BigDecimal.valueOf(hourminutes);
+        BigDecimal total_hourminutes =  minute.setScale(2,RoundingMode.HALF_UP).divide(b2,RoundingMode.HALF_UP);
+        System.out.println(total_hourminutes);
+        total_time = currentWorkingTime().add(total_hourminutes);
+        System.out.println(total_time);
     }
 }

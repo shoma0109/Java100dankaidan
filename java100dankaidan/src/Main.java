@@ -8,12 +8,12 @@ public class Main {
 //        hello.show();
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
         var number = 10.1256789;
-        LocalDateTime ldt1 = LocalDateTime.of(2023,9,1,0,0,0,0);
-        LocalDateTime ldt2 = LocalDateTime.of(2023,9,1,1,0,0,0);
+        LocalDateTime from = LocalDateTime.of(2023,9,1,0,0);
+        LocalDateTime to = LocalDateTime.of(2023,9,1,12,59);
         workingTimeScale.add(BigDecimal.valueOf(number));
         workingTimeScale.add(BigDecimal.valueOf(number));
         workingTimeScale.add(BigDecimal.valueOf(number));
         System.out.println(workingTimeScale.currentWorkingTime());
-        workingTimeScale.add(ldt1,ldt2);
+        workingTimeScale.add(from, to);
     }
 }
