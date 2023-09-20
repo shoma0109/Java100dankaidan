@@ -19,7 +19,7 @@ public class WorkingTimeScale {
         final Duration duration = Duration.between(from, to);
         final var hourminutes = duration.toMinutes();
         final var minute = BigDecimal.valueOf(hourminutes);
-        final var total_hourminutes =  minute.setScale(2,RoundingMode.HALF_UP).divide(b2,RoundingMode.HALF_UP);
+        final var total_hourminutes =  minute.setScale(2,RoundingMode.DOWN).divide(b2,RoundingMode.DOWN);
         total_time = currentWorkingTime().add(total_hourminutes);
         System.out.println(total_hourminutes);
         System.out.println(total_time);
