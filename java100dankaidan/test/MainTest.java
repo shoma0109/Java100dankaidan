@@ -1,11 +1,10 @@
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class Main {
+import static org.junit.jupiter.api.Assertions.*;
+
+class MainTest {
     public static void main(String[] args){
-//        Hello hello = new Hello();
-//        hello.askName();
-//        hello.show();
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
         var number = 10.1256789;
         LocalDateTime from = LocalDateTime.of(2023,9,1,0,0,0);
@@ -13,7 +12,6 @@ public class Main {
         workingTimeScale.add(BigDecimal.valueOf(number));
         workingTimeScale.add(BigDecimal.valueOf(number));
         workingTimeScale.add(BigDecimal.valueOf(number));
-        System.out.println(workingTimeScale.currentWorkingTime());
-        System.out.println(workingTimeScale.add(from, to));
+        workingTimeScale.add(from,to);
     }
 }

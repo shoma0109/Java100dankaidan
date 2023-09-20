@@ -15,13 +15,12 @@ public class WorkingTimeScale {
         return result;
     }
 
-    public void add(LocalDateTime from, LocalDateTime to) {
+    public BigDecimal add(LocalDateTime from, LocalDateTime to) {
         final Duration duration = Duration.between(from, to);
         final var hourminutes = duration.toMinutes();
         final var minute = BigDecimal.valueOf(hourminutes);
         final var total_hourminutes =  minute.setScale(2,RoundingMode.DOWN).divide(b2,RoundingMode.DOWN);
         total_time = currentWorkingTime().add(total_hourminutes);
-        System.out.println(total_hourminutes);
-        System.out.println(total_time);
+        return total_time;
     }
 }
