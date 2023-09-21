@@ -1,5 +1,6 @@
-import java.math.BigDecimal;
+import java.io.InputStream;
 import java.time.LocalDateTime;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
@@ -7,13 +8,13 @@ public class Main {
 //        hello.askName();
 //        hello.show();
         WorkingTimeScale workingTimeScale = new WorkingTimeScale();
-        var number = 10.1256789;
+//        var number = 10.1256789;
         LocalDateTime from = LocalDateTime.of(2023,9,1,0,0,0);
-        LocalDateTime to = LocalDateTime.of(2023,9,1,8,16,59);
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        System.out.println(workingTimeScale.currentWorkingTime());
+        LocalDateTime to = LocalDateTime.of(2023,9,1,0,30,59);
+//        workingTimeScale.add(BigDecimal.valueOf(number));
+//        workingTimeScale.add(BigDecimal.valueOf(number));
+//        workingTimeScale.add(BigDecimal.valueOf(number));
+//        System.out.println(workingTimeScale.currentWorkingTime());
         System.out.println(workingTimeScale.add(from, to));
+        }
     }
-}

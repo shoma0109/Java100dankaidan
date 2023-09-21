@@ -1,17 +1,16 @@
+import org.junit.jupiter.api.Test;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 class MainTest {
-    public static void main(String[] args){
-        WorkingTimeScale workingTimeScale = new WorkingTimeScale();
-        var number = 10.1256789;
-        LocalDateTime from = LocalDateTime.of(2023,9,1,0,0,0);
-        LocalDateTime to = LocalDateTime.of(2023,9,1,8,16,59);
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.add(BigDecimal.valueOf(number));
-        workingTimeScale.add(from,to);
+    BigDecimal Expected_value = new BigDecimal("0.25");
+    WorkingTimeScale workingTimeScale = new WorkingTimeScale();
+    LocalDateTime from = LocalDateTime.of(2023,9,1,0,0,0);
+    LocalDateTime to = LocalDateTime.of(2023,9,1,0,15,0);
+    @Test
+    void add(){
+        assertEquals("miss", Expected_value, workingTimeScale.add(from, to));
     }
 }
