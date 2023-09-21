@@ -6,6 +6,7 @@ class Hello {
     public void show() {
         System.out.println("Hello " + firstName + " " + lastName + " さん！");
     }
+
     public void askName(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("名前を入力してください");
