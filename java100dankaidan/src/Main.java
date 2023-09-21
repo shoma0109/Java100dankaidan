@@ -20,7 +20,13 @@ public class Main {
 //        System.out.println(workingTimeScale.add(from, to));
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("何か入力してください");
+        System.out.println("一回目、何か入力してください");
+        output = scanner.next();
+        user_input();
+        System.out.println("二回目、何か入力してください");
+        output = scanner.next();
+        user_input();
+        System.out.println("三回目、何か入力してください");
         output = scanner.next();
         user_input();
     }
