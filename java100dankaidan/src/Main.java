@@ -16,5 +16,10 @@ public class Main {
 //        workingTimeScale.add(BigDecimal.valueOf(number));
 //        System.out.println(workingTimeScale.currentWorkingTime());
         System.out.println(workingTimeScale.add(from, to));
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("何か入力してください");
+        scanner.next();
         }
     }
