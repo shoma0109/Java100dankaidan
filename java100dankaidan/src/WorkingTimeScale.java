@@ -20,7 +20,14 @@ public class WorkingTimeScale {
         final var hourminutes = duration.toMinutes();
         final var minute = BigDecimal.valueOf(hourminutes);
         final var total_hourminutes =  minute.setScale(2,RoundingMode.DOWN).divide(b2,RoundingMode.DOWN);
-        total_time = currentWorkingTime().add(total_hourminutes);
-        return total_time;
+        if(total_hourminutes.compareTo (BigDecimal.valueOf (0)) > 0) {
+            total_time = currentWorkingTime().add(total_hourminutes);
+            System.out.println("経過時間" + total_hourminutes);
+            return total_time;
+        } else {
+            System.out.println("経過時間" + total_hourminutes);
+            System.out.println("経過時間の差がマイナスの場合は合計時間に計上されません。");
+            return currentWorkingTime();
+        }
     }
 }
