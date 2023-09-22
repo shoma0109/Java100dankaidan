@@ -35,7 +35,7 @@ class 入力された秒数は計上されないことを確認するテスト {
 
     @Test
     void Ignore_seconds(){
-        assertEquals("miss", Expected_value, workingTimeScale.add(from, to));
+        assertEquals("値が期待値と異なります。", Expected_value, workingTimeScale.add(from, to));
     }
 }
 
@@ -71,6 +71,6 @@ class 時刻の差がマイナスかつ入力された秒数は計上されな�
 
     @Test
     void minus_Ignore_seconds(){
-        assertEquals("miss", Expected_value, workingTimeScale.add(from, to));
+        assertEquals("値が期待値と異なります。", Expected_value, workingTimeScale.add(from, to));
     }
 }
