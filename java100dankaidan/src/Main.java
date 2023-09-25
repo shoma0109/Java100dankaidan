@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     static String output;
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        Hello hello = new Hello();
 //        hello.askName();
 //        hello.show();
@@ -19,15 +19,22 @@ public class Main {
 //        System.out.println(workingTimeScale.currentWorkingTime());
 //        System.out.println(workingTimeScale.add(from, to));
 
-        for (int i = 0; i <= 2; i++){
-            Scanner scanner = new Scanner(System.in);
-            System.out.println(i + 1 + "回目、何か入力してください");
-            output = scanner.next();
-            user_input();
-        }
-    }
 
-    public static void user_input(){
-        System.out.println(output);
-    }
+        System.out.println("何か入力してください");
+        Scanner scanner = new Scanner(System.in);
+        output = scanner.next();
+            while (output.length() >= 20) {
+                System.out.println("文字入力は20文字未満で入力してください");
+                break;
+            }
+        }
+
+
+//        for (int i = 0; i <= 2; i++){
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println(i + 1 + "回目、何か入力してください");
+//            output = scanner.next();
+//            user_input();
+//        }
+//    }
 }

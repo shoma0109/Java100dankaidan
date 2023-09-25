@@ -17,9 +17,9 @@ public class WorkingTimeScale {
 
     public BigDecimal add(LocalDateTime from, LocalDateTime to) {
         final Duration duration = Duration.between(from, to);
-        final var hourminutes = duration.toMinutes();
-        final var minute = BigDecimal.valueOf(hourminutes);
-        final var total_hourminutes =  minute.setScale(2,RoundingMode.DOWN).divide(b2,RoundingMode.DOWN);
+        final long hourminutes = duration.toMinutes();
+        final BigDecimal minute = BigDecimal.valueOf(hourminutes);
+        final BigDecimal total_hourminutes =  minute.setScale(2,RoundingMode.DOWN).divide(b2,RoundingMode.DOWN);
         if(total_hourminutes.compareTo (BigDecimal.valueOf (0)) > 0) {
             total_time = currentWorkingTime().add(total_hourminutes);
             System.out.println("経過時間" + total_hourminutes);
