@@ -25,8 +25,10 @@ public class Main {
         output = scanner.next();
             while (output.length() >= 20) {
                 System.out.println("文字入力は20文字未満で入力してください");
-                break;
+                Scanner scan = new Scanner(System.in);
+                output = scan.next();
             }
+            System.out.println(output);
         }
 
 
